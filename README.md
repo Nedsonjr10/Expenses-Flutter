@@ -1,4 +1,4 @@
-# expenses
+# Expenses
 
 Project to demonstrate my knowledge of Flutter and Dart.
 
