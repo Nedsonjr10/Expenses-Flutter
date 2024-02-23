@@ -19,6 +19,21 @@ class ExpensesApp extends StatelessWidget {
           primary: Colors.purple,
           secondary: Colors.amber,
         ),
+        textTheme: tema.textTheme.copyWith(
+          titleLarge: const TextStyle(
+            fontFamily: 'OpenSans',
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          ),
+        ),
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: TextStyle(
+            fontFamily: 'OpenSans',
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
     );
   }
@@ -90,8 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               child: Card(
                 color: Colors.blue,
-                elevation: 5,
                 child: Text('Gráfico'),
+                elevation: 5,
               ),
             ),
             TransactionList(_transactions),
